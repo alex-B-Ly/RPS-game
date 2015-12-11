@@ -65,22 +65,24 @@ $(document).ready(function() {
 		$('#comp-score').html(compScore);
 	}
 
-	// ROUND CHOOSER FUNCTION 
+	// ROUND CHOOSE FUNCTION 
+	function roundChoose(){
+		rounds = $(this).attr('data-rounds');
+		console.log(rounds);
+	}
 
+	// GAME START FUNCTION
 	function gameStart(){
-		var roundsChosen = $('#round-input').val();
-		
-		// Number validation
-		if(isNaN(roundsChosen) || roundsChosen === ''){
-			console.log('Please choose a number');
-		}else{
-			console.log(roundsChosen);
+		// check if rounds var has a number
+		if(rounds === undefined){
+			console.log('you must pick a number of rounds.');
+			return;
 		}
 
-		// make input, start button and rules disappear
-
+		// make round chooser buttons, start button and rules disappear
+		$('.game-start-area').fadeOut(1000);
 		// make game elements appear (wrap them all in a giant div to make it appear, same as gamestart screen)
-
+		$('.game-area').fadeIn(1500);
 		// set 'rounds' global var to be equal to roundsChosen
 	}
 
@@ -89,6 +91,7 @@ $(document).ready(function() {
 		// if roundCount var = rounds var, hide game elements div, show final score screen
 
 	// BOUND FUNCTIONS
+	$('.round-button').on('click', roundChoose);
 	$('.start-button').on('click', gameStart);
 	$('.choice-button').on('click', chooser);
 

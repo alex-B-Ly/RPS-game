@@ -11,17 +11,35 @@
 </head>
 <body>
 
-	<input id="round-input" type="text" placeholder="Choose number of rounds"/>
-	<button class="btn start-button">Start the Game</button>
+	<div class="game-start-area">
+		<button class="round-button" data-rounds="1">1</button>
+		<button class="round-button" data-rounds="3">3</button>
+		<button class="round-button" data-rounds="5">5</button>
+		<button class="round-button" data-rounds="10">10</button>
+		<button class="round-button" data-rounds="15">15</button>
+		<button class="round-button" data-rounds="20">20</button>
+		<button class="round-button" data-rounds="25">25</button>
+		<button class="round-button" data-rounds="40">40</button>
+		<button class="round-button" data-rounds="50">50</button>
+		<button class="round-button" data-rounds="100">100</button>
 
-	<h2>USER SCORE: <span id="user-score">0</span></h2>
-	<h2>COMP SCORE: <span id="comp-score">0</span></h2>
+		<button class="btn start-button">Start the Game</button>
+	</div>
 
-	<button class="choice-button" data-choice="r">ROCK</button>
-	<button class="choice-button" data-choice="p">PAPER</button>
-	<button class="choice-button" data-choice="s">SCISSORS</button>
-	<button class="choice-button" data-choice="lz">LIZARD</button>
-	<button class="choice-button" data-choice="sp">SPOCK</button>
+	<div class="game-area">
+		<h2>USER SCORE: <span id="user-score">0</span></h2>
+		<h2>COMP SCORE: <span id="comp-score">0</span></h2>
+
+		<button class="choice-button" data-choice="r">ROCK</button>
+		<button class="choice-button" data-choice="p">PAPER</button>
+		<button class="choice-button" data-choice="s">SCISSORS</button>
+		<button class="choice-button" data-choice="lz">LIZARD</button>
+		<button class="choice-button" data-choice="sp">SPOCK</button>
+	</div>
+
+	<div class="game-finish-area">
+		
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
