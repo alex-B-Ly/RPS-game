@@ -39,7 +39,8 @@ $(document).ready(function() {
 	};
 
 	var userScore = 0, compScore = 0;
-	
+
+	// CHOOSE FUNCTION	
 	function chooser(){
 		var choiceData = $(this).attr('data-choice');
 		var userChoice = choices[choiceData];
@@ -64,8 +65,12 @@ $(document).ready(function() {
 		$('#comp-score').html(compScore);
 	}
 
+	// ROUND CHOOSER FUNCTION
+	function roundChooser(){
+		
+	}
+
 	// BOUND FUNCTIONS
 	$('.choice-button').on('click', chooser);
-
 
 });
