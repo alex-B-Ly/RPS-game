@@ -38,7 +38,7 @@ $(document).ready(function() {
 		}
 	};
 
-	var userScore = 0, compScore = 0;
+	var userScore = 0, compScore = 0, roundCount=1, rounds;
 
 	// CHOOSE FUNCTION	
 	function chooser(){
@@ -65,12 +65,33 @@ $(document).ready(function() {
 		$('#comp-score').html(compScore);
 	}
 
-	// ROUND CHOOSER FUNCTION
-	function roundChooser(){
+	// ROUND CHOOSER FUNCTION 
+
+	function gameStart(){
+		var roundsChosen = $('#round-input').val();
 		
+		// Number validation
+		if(isNaN(roundsChosen) || roundsChosen === ''){
+			console.log('Please choose a number');
+		}else{
+			console.log(roundsChosen);
+		}
+
+		// make input, start button and rules disappear
+
+		// make game elements appear (wrap them all in a giant div to make it appear, same as gamestart screen)
+
+		// set 'rounds' global var to be equal to roundsChosen
 	}
 
+	// ROUND LIMITER FUNCTION
+
+		// if roundCount var = rounds var, hide game elements div, show final score screen
+
 	// BOUND FUNCTIONS
+	$('.start-button').on('click', gameStart);
 	$('.choice-button').on('click', chooser);
+
+	// FUNCTIONS CALLED
 
 });
