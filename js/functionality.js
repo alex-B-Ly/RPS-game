@@ -85,7 +85,8 @@ $(document).ready(function() {
 		$('.game-start-area').fadeOut(1000);
 		// make game elements appear (wrap them all in a giant div to make it appear, same as gamestart screen)
 		$('.game-area').fadeIn(1500);
-		// set 'rounds' global var to be equal to roundsChosen
+		// Allow game buttons to work
+		$('.choice-button').on('click', chooser);
 	}
 
 	// ROUND LIMITER FUNCTION
@@ -95,13 +96,19 @@ $(document).ready(function() {
 		if(roundCount > rounds){
 			console.log('game finished');
 			$('.choice-button').off();
+			$('.game-area').fadeOut(3000,function(){
+				$('.game-finish-area').fadeIn(2000);
+			});
 		}
 	}
+
+	// FINISH SCREEN FUNCTION
+	
 
 	// BOUND FUNCTIONS
 	$('.round-button').on('click', roundChoose);
 	$('.start-button').on('click', gameStart);
-	$('.choice-button').on('click', chooser);
+	
 
 	// FUNCTIONS CALLED
 
