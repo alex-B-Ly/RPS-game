@@ -112,6 +112,9 @@ $(document).ready(function() {
 		}else{
 			$('.overall-winner').html('Computer Wins');
 		}
+
+		$('.final-user-score').html(userScore);
+		$('.final-comp-score').html(compScore);
 	}
 
 	// BOUND FUNCTIONS
