@@ -63,11 +63,13 @@ $(document).ready(function() {
 	
 		$('#user-score').html(userScore);
 		$('#comp-score').html(compScore);
+
+		roundIncrementer();
 	}
 
 	// ROUND CHOOSE FUNCTION 
 	function roundChoose(){
-		rounds = $(this).attr('data-rounds');
+		rounds = parseInt($(this).attr('data-rounds'));
 		console.log(rounds);
 	}
 
@@ -87,8 +89,14 @@ $(document).ready(function() {
 	}
 
 	// ROUND LIMITER FUNCTION
-
+	function roundIncrementer(){
 		// if roundCount var = rounds var, hide game elements div, show final score screen
+		roundCount++;
+		if(roundCount > rounds){
+			console.log('game finished');
+			$('.choice-button').off();
+		}
+	}
 
 	// BOUND FUNCTIONS
 	$('.round-button').on('click', roundChoose);
