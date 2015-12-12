@@ -99,11 +99,20 @@ $(document).ready(function() {
 			$('.game-area').fadeOut(3000,function(){
 				$('.game-finish-area').fadeIn(2000);
 			});
+			winnerAnnounce();
 		}
 	}
 
 	// FINISH SCREEN FUNCTION
-	
+	function winnerAnnounce(){
+		if(userScore === compScore){
+			$('.overall-winner').html('Tie.  There is no victor.');
+		}else if(userScore > compScore){
+			$('.overall-winner').html('You Win')
+		}else{
+			$('.overall-winner').html('Computer Wins');
+		}
+	}
 
 	// BOUND FUNCTIONS
 	$('.round-button').on('click', roundChoose);
