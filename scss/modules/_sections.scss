@@ -1,0 +1,30 @@
+// SECTIONS
+
+/* GAME START AREA */
+.game-start-area,
+.game-area,
+.game-finish-area{
+	height: 100%;
+	width: 100%;
+}
+
+.game-start-area{
+	background: $game-start-back;
+}
+
+/* GAME AREA */
+.game-area{
+	background: $game-back;
+	display: none;
+}
+
+/* GAME FINISH AREA */
+.game-finish-area{
+	background: $game-finish-back;
+	display: none;
+}
+
+.overall-winner{
+	font-size: 2.5em;
+	color: red;
+}

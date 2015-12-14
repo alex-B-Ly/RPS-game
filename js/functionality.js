@@ -82,9 +82,9 @@ $(document).ready(function() {
 		}
 
 		// make round chooser buttons, start button and rules disappear
-		$('.game-start-area').fadeOut(1000);
+		$('.game-start-area').fadeOut(500);
 		// make game elements appear (wrap them all in a giant div to make it appear, same as gamestart screen)
-		$('.game-area').fadeIn(1500);
+		$('.game-area').fadeIn(500);
 		// Allow game buttons to work
 		$('.choice-button').on('click', chooser);
 	}
@@ -96,8 +96,8 @@ $(document).ready(function() {
 		if(roundCount > rounds){
 			console.log('game finished');
 			$('.choice-button').off();
-			$('.game-area').fadeOut(3000,function(){
-				$('.game-finish-area').fadeIn(2000);
+			$('.game-area').fadeOut(600,function(){
+				$('.game-finish-area').fadeIn(1000);
 			});
 			winnerAnnounce();
 		}

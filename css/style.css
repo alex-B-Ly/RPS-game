@@ -1,0 +1,39 @@
+/*
+
+	ROCK PAPER SCISSORS LIZARD SPOCK
+	author: Alex Ly	
+
+*/
+html,
+body {
+  height: 100%;
+  width: 100%; }
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 0; }
+
+/* GAME START AREA */
+.game-start-area,
+.game-area,
+.game-finish-area {
+  height: 100%;
+  width: 100%; }
+
+.game-start-area {
+  background: #9EFFF9; }
+
+/* GAME AREA */
+.game-area {
+  background: #00f5e6;
+  display: none; }
+
+/* GAME FINISH AREA */
+.game-finish-area {
+  background: #00d1c4;
+  display: none; }
+
+.overall-winner {
+  font-size: 2.5em;
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */
