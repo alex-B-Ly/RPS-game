@@ -50,7 +50,24 @@
 			</div>
 			<div class="row text-center">
 				<div class="col-xs-12">
-					<a class="game-rules" href="#">Game Rules</a>
+					<a class="game-rules" href="#" data-toggle="modal" data-target="#rules-modal">Game Rules</a>
+				</div>
+			</div>
+			<div id="rules-modal" class="modal fade">
+				<div class="modal-content">
+					<div class="modal-body rules">							
+						<p>This game pits you against an opponent in a game of chance.  You will select the number of rounds you wish to play, and the game will begin when you click start. You will be given the option to pick between rock, paper, scissors, lizard and spock.  Upon choosing, your devious opponent will do the same.  Each of the choices wins over two of the others, and loses to two of the others.  If both you and your opponent have the same choice, a draw is declared and the round starts over.  Below are the winning and losing conditions:</p>
+						<ul class="text-left">
+							<li>Rock breaks scissors and crushes lizard to a pulp.  Rock get wrapped by paper and is vaporized by Spock.</li>
+							<li>Paper wraps rock and paper cuts Spock's logic.  Paper gets sheared by scissors and devoured by lizard.</li>
+							<li>Scissors shears paper and pokes out lizard's eyes.  Scissors gets broken by rock and spock's logic.</li>
+							<li>Lizard consumes Spock and paper.  Lizard gets its eyes poked out by scissors and gets crushed by rock.</li>
+							<li>Spock defeats rock and scissors with his logic.  Spock gets paper cut and eaten by lizard.</li>
+						</ul>							
+					</div>
+					<div class="modal-footer text-center">
+						<button class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
 				</div>
 			</div>
 		</div>

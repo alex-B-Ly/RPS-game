@@ -42,15 +42,23 @@
 .game-rules,
 .game-rules:link,
 .game-rules:active{
-	font-size: 1.2em;
+	font-size: 1.25em;
 	color: $choice-buttons;
 	text-decoration: none;
+	padding-right: 7px;
 	transition: all 2s;
 }
 
 .game-rules:hover{
 	color: lighten($choice-buttons, 10%);
-	font-size: 1.3em;
+}
+
+.modal-content{
+	background: $game-back;
+}
+
+.rules{
+	font-size: 1.2em;
 }
 
 /* GAME AREA */

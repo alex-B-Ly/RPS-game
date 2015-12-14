@@ -117,7 +117,7 @@ $(document).ready(function() {
 		$('.final-comp-score').html(compScore);
 	}
 
-	// BOUND FUNCTIONS
+		// BOUND FUNCTIONS
 	$('.round-button').on('click', roundChoose);
 	$('.start-button').on('click', gameStart);
 	
