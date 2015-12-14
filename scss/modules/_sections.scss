@@ -39,10 +39,36 @@
 	padding: 10px 0;
 }
 
+.game-rules,
+.game-rules:link,
+.game-rules:active{
+	font-size: 1.2em;
+	color: $choice-buttons;
+	text-decoration: none;
+	transition: all 2s;
+}
+
+.game-rules:hover{
+	color: lighten($choice-buttons, 10%);
+	font-size: 1.3em;
+}
+
 /* GAME AREA */
 .game-area{
 	background: $game-back;
 	display: none;
+}
+
+.score-area{
+	padding: 20px 0 0 0;
+}
+
+.game-area-score{
+	font-size: 1.3em;
+}
+
+.choice-area{
+	padding-bottom: 30px;
 }
 
 /* GAME FINISH AREA */
@@ -54,4 +80,15 @@
 .overall-winner{
 	font-size: 2.5em;
 	color: red;
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 1200px){
+	.score-area{
+		padding: 50px 0;
+	}
+
+	.game-area-score{
+		font-size: 4em;
+	}
 }

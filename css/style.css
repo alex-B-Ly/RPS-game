@@ -15,6 +15,9 @@ body {
   font-size: 2.4em;
   margin-top: 10px; }
 
+.main-title {
+  font-size: 2.3em; }
+
 /* GAME START AREA */
 .game-start-area,
 .game-area,
@@ -46,10 +49,31 @@ body {
 .round-buttons-col {
   padding: 10px 0; }
 
+.game-rules,
+.game-rules:link,
+.game-rules:active {
+  font-size: 1.2em;
+  color: #FFFC03;
+  text-decoration: none;
+  transition: all 2s; }
+
+.game-rules:hover {
+  color: #fffd36;
+  font-size: 1.3em; }
+
 /* GAME AREA */
 .game-area {
   background: #0008a1;
   display: none; }
+
+.score-area {
+  padding: 20px 0 0 0; }
+
+.game-area-score {
+  font-size: 1.3em; }
+
+.choice-area {
+  padding-bottom: 30px; }
 
 /* GAME FINISH AREA */
 .game-finish-area {
@@ -60,6 +84,12 @@ body {
   font-size: 2.5em;
   color: red; }
 
+@media screen and (min-width: 1200px) {
+  .score-area {
+    padding: 50px 0; }
+
+  .game-area-score {
+    font-size: 4em; } }
 .round-button,
 .start-button {
   outline: none;
@@ -88,9 +118,20 @@ body {
   cursor: pointer;
   padding: 25px; }
 
+.fa:hover {
+  box-shadow: inset 0 0 20px #cfcd00; }
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .fa {
+    font-size: 6em;
+    margin-bottom: 10px; } }
 @media screen and (max-width: 479px) {
   .fa {
-    font-size: 3em;
-    border: none; } }
+    font-size: 4em;
+    border: 0;
+    padding: 20px; }
+
+  .fa:hover {
+    box-shadow: none; } }
 
 /*# sourceMappingURL=style.css.map */
