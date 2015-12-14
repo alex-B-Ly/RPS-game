@@ -81,6 +81,10 @@ body {
 .choice-area {
   padding-bottom: 30px; }
 
+.final-button-area {
+  margin-top: 30px;
+  display: none; }
+
 /* GAME FINISH AREA */
 .game-finish-area {
   background: #00067d;
@@ -135,6 +139,10 @@ body {
 
 .choice-button:hover {
   box-shadow: inset 0 0 20px #cfcd00; }
+
+.final-button {
+  font-size: 3em;
+  padding: 20px 0; }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .choice-button {

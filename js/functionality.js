@@ -98,9 +98,17 @@ $(document).ready(function() {
 		if(roundCount > rounds){
 			console.log('game finished');
 			$('.choice-button').off();
-			$('.game-area').fadeOut(600,function(){
-				$('.game-finish-area').fadeIn(1000);
+
+			$('.choice-row').fadeOut(500, function(){
+				$('.final-button-area').fadeIn(600);
 			});
+
+			$('.final-button').on('click', function(){
+				$('.game-area').fadeOut(600,function(){
+					$('.game-finish-area').fadeIn(1000);
+				});
+			});
+				
 			winnerAnnounce();
 		}
 	}
