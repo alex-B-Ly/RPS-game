@@ -13,13 +13,12 @@
 }
 
 .round-choose-info-area{
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .rounds-display{
 	@include solid-border('all', 5px, black);
 	border-radius: 20px;
-	padding-top: 15px;
 }
 
 .rounds-display-number{
@@ -36,7 +35,7 @@
 }
 
 .round-buttons-col{
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 /* GAME AREA */

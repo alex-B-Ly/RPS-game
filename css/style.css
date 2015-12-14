@@ -6,7 +6,7 @@
 */
 html,
 body {
-  height: 110%; }
+  height: 105%; }
 
 .h1, .h2, .h3, h1, h2, h3 {
   margin-top: 0; }
@@ -26,12 +26,11 @@ body {
   background: #9EFFF9; }
 
 .round-choose-info-area {
-  padding: 20px 0; }
+  padding: 10px 0; }
 
 .rounds-display {
   border: 5px solid black;
-  border-radius: 20px;
-  padding-top: 15px; }
+  border-radius: 20px; }
 
 .rounds-display-number {
   font-size: 5em;
@@ -44,7 +43,7 @@ body {
   font-size: 1.7em; }
 
 .round-buttons-col {
-  padding: 20px 0; }
+  padding: 10px 0; }
 
 /* GAME AREA */
 .game-area {
@@ -66,7 +65,9 @@ body {
   box-shadow: none; }
 
 .round-button {
-  border: 3px solid #3846FF;
+  border: 3px solid #151515;
+  background: #040AFE;
+  color: #F3FC00;
   font-size: 1.7em;
   border-radius: 50%;
   width: auto;
@@ -74,6 +75,8 @@ body {
   width: 60px; }
 
 .start-button {
+  border: 5px solid #151515;
+  border-radius: 5px;
   font-size: 2.75em;
   margin: 20px 0; }
 

@@ -6,7 +6,9 @@
 }
 
 .round-button{
-	@include solid-border('all', 3px, #3846FF);
+	@include solid-border('all', 3px, #151515);
+	background: #040AFE;
+	color: #F3FC00;
 	font-size: 1.7em;
 	border-radius: 50%;
 	width: auto;
@@ -15,6 +17,8 @@
 }
 
 .start-button{
+	@include solid-border('all', 5px, #151515);
+	border-radius: 5px;
 	font-size: 2.75em;
 	margin: 20px 0;
 }
