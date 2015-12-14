@@ -53,7 +53,7 @@
 					<a class="game-rules" href="#" data-toggle="modal" data-target="#rules-modal">Game Rules</a>
 				</div>
 			</div>
-			<div id="rules-modal" class="modal fade">
+			<div id="rules-modal" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header text-center">
@@ -88,14 +88,14 @@
 
 			<div class="row text-center score-area">
 				<div class="col-xs-6">
-					<p class="game-area-score">USER SCORE: <span id="user-score">0</span></p>
+					<p class="game-area-score">USER: <span id="user-score">0</span></p>
 				</div>
 				<div class="col-xs-6">
-					<p class="game-area-score">COMP SCORE: <span id="comp-score">0</span></p>
+					<p class="game-area-score">COMP: <span id="comp-score">0</span></p>
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row choice-row">
 				<div class="text-center choice-area">
 					<div class="col-xs-12 col-lg-2 col-lg-offset-1">
 						<i class="fa fa-hand-rock-o choice-button" data-choice="r"></i>
@@ -118,7 +118,15 @@
 	</div>
 
 	<div class="container">
-
+		<div id="results-modal" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p class="face"></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="game-finish-area">

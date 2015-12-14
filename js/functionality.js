@@ -50,7 +50,9 @@ $(document).ready(function() {
 
 		console.log(userChoice);
 		console.log(compRand);
-	
+
+		$('#results-modal').modal('show');
+
 		if(compChoice === 1){
 			console.log('you win');
 			userScore++;

@@ -91,6 +91,9 @@ body {
   color: red; }
 
 @media screen and (min-width: 1200px) {
+  .choice-row {
+    padding-top: 25%; }
+
   .score-area {
     padding: 50px 0; }
 
@@ -136,7 +139,8 @@ body {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .choice-button {
     font-size: 6em;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px;
+    min-width: 160px; } }
 @media screen and (max-width: 479px) {
   .choice-button {
     font-size: 4em;
