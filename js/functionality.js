@@ -159,6 +159,24 @@ $(document).ready(function() {
 
 		$('.final-user-score').html(userScore);
 		$('.final-comp-score').html(compScore);
+
+		function replay(){
+			userScore = 0;
+			compScore = 0;
+			roundCount=1;
+			rounds=undefined;
+			$('#user-score').html(0);
+			$('#comp-score').html(0);
+			$('.choice-row').css('display', 'block');
+			$('.final-button-area').css('display', 'none');
+			$('.start-button').removeClass('start-button-animate');
+			$('.rounds-display-number').css('visibility', 'hidden');
+			$('.game-finish-area').fadeOut(500,function(){
+				$('.game-start-area').fadeIn(1000);
+			});
+		}
+
+		$('.replay').on('click', replay);
 	}
 
 		// BOUND FUNCTIONS
