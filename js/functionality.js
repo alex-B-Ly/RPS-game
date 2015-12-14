@@ -80,6 +80,7 @@ $(document).ready(function() {
 		// check if rounds var has a number
 		if(rounds === undefined){
 			console.log('you must pick a number of rounds.');
+			$('.round-choose-title').addClass('bounce');
 			return;
 		}
 

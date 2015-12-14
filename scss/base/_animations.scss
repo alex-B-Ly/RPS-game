@@ -1,5 +1,11 @@
+@-webkit-keyframes startblink{
+	0%{background: #040AFE; color: #F3FC00;}
+	50%{background: darken(#040AFE, 12%); color: brighten(#F3FC00, 15%); border: 5px solid #F3FC00;}
+	100%{background: #040AFE; color: #F3FC00;}
+}
+
 @keyframes startblink{
-	0%{color: #F3FC00; text-shadow: 0 0 55px #F3FC00; background: darken(#040AFE, 10%); border: 5px solid #F3FC00;}
-	50%{color: darken(#F3FC00, 13%); background:#040AFE; border: 5px solid darken(#F3FC00, 20%);}
-	100%{color: #F3FC00; text-shadow: 0 0 55px #F3FC00; background: darken(#040AFE, 10%); border: 5px solid #F3FC00;}
+	0%{background: #040AFE; color: #F3FC00;}
+	50%{background: darken(#040AFE, 12%); color: brighten(#F3FC00, 15%); border: 5px solid #F3FC00;}
+	100%{background: #040AFE; color: #F3FC00;}
 }
