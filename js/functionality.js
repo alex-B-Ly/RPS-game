@@ -70,7 +70,7 @@ $(document).ready(function() {
 	// ROUND CHOOSE FUNCTION 
 	function roundChoose(){
 		rounds = parseInt($(this).attr('data-rounds'));
-		console.log(rounds);
+		$('.rounds-display-number').html(rounds).css('visibility', 'visible');
 	}
 
 	// GAME START FUNCTION

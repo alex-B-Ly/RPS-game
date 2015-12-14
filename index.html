@@ -12,18 +12,42 @@
 <body>
 
 	<div class="game-start-area">
-		<button class="round-button" data-rounds="1">1</button>
-		<button class="round-button" data-rounds="3">3</button>
-		<button class="round-button" data-rounds="5">5</button>
-		<button class="round-button" data-rounds="10">10</button>
-		<button class="round-button" data-rounds="15">15</button>
-		<button class="round-button" data-rounds="20">20</button>
-		<button class="round-button" data-rounds="25">25</button>
-		<button class="round-button" data-rounds="40">40</button>
-		<button class="round-button" data-rounds="50">50</button>
-		<button class="round-button" data-rounds="100">100</button>
-
-		<button class="btn start-button">Start the Game</button>
+		<div class="container">
+			<div class="row text-center">
+				<h1>ROCK PAPER SCISSORS LIZARD SPOCK</h1>
+			</div>
+			<div class="row round-choose-info-area">
+				<div class="col-xs-6"></div>
+				<div class="col-xs-6">
+					<div class="rounds-display text-center">
+						<p class="rounds-display-number">0</p>
+						<p class="rounds-display-title">Number of Rounds</p>
+					</div>
+				</div>
+			</div>
+			<div class="row round-choose-area text-center">
+				<div class="col-xs-12">
+					<p class="round-choose-title">Choose a number of rounds</p>
+				</div>
+				<div class="col-xs-12 round-buttons-col">
+					<button class="round-button" data-rounds="1">1</button>
+					<button class="round-button" data-rounds="3">3</button>
+					<button class="round-button" data-rounds="5">5</button>
+					<button class="round-button" data-rounds="10">10</button>
+					<button class="round-button" data-rounds="15">15</button>
+				</div>
+				<div class="col-xs-12 round-buttons-col">
+					<button class="round-button" data-rounds="20">20</button>
+					<button class="round-button" data-rounds="25">25</button>
+					<button class="round-button" data-rounds="40">40</button>
+					<button class="round-button" data-rounds="50">50</button>
+					<button class="round-button" data-rounds="100">100</button>
+				</div>
+				<div class="col-xs-12">
+					<button class="btn start-button">Start the Game</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="game-area">

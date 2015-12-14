@@ -12,6 +12,33 @@
 	background: $game-start-back;
 }
 
+.round-choose-info-area{
+	padding: 20px 0;
+}
+
+.rounds-display{
+	@include solid-border('all', 5px, black);
+	border-radius: 20px;
+	padding-top: 15px;
+}
+
+.rounds-display-number{
+	font-size: 5em;
+	visibility: hidden;
+}
+
+.rounds-display-title{
+	font-size: 1.5em;
+}
+
+.round-choose-title{
+	font-size: 1.7em;
+}
+
+.round-buttons-col{
+	padding: 20px 0;
+}
+
 /* GAME AREA */
 .game-area{
 	background: $game-back;

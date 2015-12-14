@@ -6,11 +6,14 @@
 */
 html,
 body {
-  height: 100%;
-  width: 100%; }
+  height: 110%; }
 
 .h1, .h2, .h3, h1, h2, h3 {
   margin-top: 0; }
+
+.h1, h1 {
+  font-size: 2.4em;
+  margin-top: 10px; }
 
 /* GAME START AREA */
 .game-start-area,
@@ -21,6 +24,27 @@ body {
 
 .game-start-area {
   background: #9EFFF9; }
+
+.round-choose-info-area {
+  padding: 20px 0; }
+
+.rounds-display {
+  border: 5px solid black;
+  border-radius: 20px;
+  padding-top: 15px; }
+
+.rounds-display-number {
+  font-size: 5em;
+  visibility: hidden; }
+
+.rounds-display-title {
+  font-size: 1.5em; }
+
+.round-choose-title {
+  font-size: 1.7em; }
+
+.round-buttons-col {
+  padding: 20px 0; }
 
 /* GAME AREA */
 .game-area {
@@ -35,5 +59,22 @@ body {
 .overall-winner {
   font-size: 2.5em;
   color: red; }
+
+.round-button,
+.start-button {
+  outline: none;
+  box-shadow: none; }
+
+.round-button {
+  border: 3px solid #3846FF;
+  font-size: 1.7em;
+  border-radius: 50%;
+  width: auto;
+  height: 60px;
+  width: 60px; }
+
+.start-button {
+  font-size: 2.75em;
+  margin: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */
