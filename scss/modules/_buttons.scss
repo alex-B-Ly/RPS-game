@@ -34,6 +34,11 @@
 }
 
 .start-button:hover{
+	color: #fff;
+	text-shadow: 0 0 50px #fff;
+}
+
+.start-button-animate{
 	animation: startblink 2s infinite;
 }
 

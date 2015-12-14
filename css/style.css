@@ -40,6 +40,44 @@ body {
   100% {
     background: #040AFE;
     color: #F3FC00; } }
+@-webkit-keyframes round-warn {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    text-shadow: 0 0 5px #fff; }
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    text-shadow: 0 0 20px #fff; }
+  85% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+@keyframes round-warn {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    text-shadow: 0 0 5px #fff; }
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    text-shadow: 0 0 20px #fff; }
+  85% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
 /* GAME START AREA */
 .game-start-area,
 .game-area,
@@ -67,6 +105,9 @@ body {
 
 .round-choose-title {
   font-size: 1.7em; }
+
+.round-choose-title-warn {
+  animation: round-warn 1s infinite; }
 
 .round-buttons-col {
   padding: 10px 0; }
@@ -118,6 +159,12 @@ body {
   color: #FFFC03;
   display: block; }
 
+#human-choice-img {
+  margin-bottom: 50px; }
+
+#comp-choice-img {
+  margin-top: 50px; }
+
 /* GAME FINISH AREA */
 .game-finish-area {
   background: #00067d;
@@ -167,6 +214,10 @@ body {
   margin: 20px 0; }
 
 .start-button:hover {
+  color: #fff;
+  text-shadow: 0 0 50px #fff; }
+
+.start-button-animate {
   animation: startblink 2s infinite; }
 
 .choice-button {

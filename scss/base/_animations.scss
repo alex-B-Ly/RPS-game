@@ -9,3 +9,17 @@
 	50%{background: darken(#040AFE, 12%); color: brighten(#F3FC00, 15%); border: 5px solid #F3FC00;}
 	100%{background: #040AFE; color: #F3FC00;}
 }
+
+@-webkit-keyframes round-warn{
+	0%{-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); text-shadow: 0 0 5px #fff;}
+	50%{-webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); text-shadow: 0 0 20px #fff;}
+	85%{-webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9);}
+	100%{-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1);}
+}
+
+@keyframes round-warn{
+	0%{-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1);  text-shadow: 0 0 5px #fff;}
+	50%{-webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); text-shadow: 0 0 20px #fff;}
+	85%{-webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9);}
+	100%{-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1);}
+}

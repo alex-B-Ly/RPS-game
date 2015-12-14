@@ -35,6 +35,10 @@
 	font-size: 1.7em;
 }
 
+.round-choose-title-warn{
+	animation: round-warn 1s infinite;
+}
+
 .round-buttons-col{
 	padding: 10px 0;
 }
@@ -95,6 +99,14 @@
 	font-size: 5em;
 	color: $choice-buttons;
 	display: block;
+}
+
+#human-choice-img{
+	margin-bottom: 50px;
+}
+
+#comp-choice-img{
+	margin-top: 50px;
 }
 
 /* GAME FINISH AREA */

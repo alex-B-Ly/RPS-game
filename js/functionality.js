@@ -100,6 +100,12 @@ $(document).ready(function() {
 	function roundChoose(){
 		rounds = parseInt($(this).attr('data-rounds'));
 		$('.rounds-display-number').html(rounds).css('visibility', 'visible');
+
+		if($('.round-choose-title').hasClass('round-choose-title-warn')){
+			$('.round-choose-title').removeClass('round-choose-title-warn');
+		}
+
+		$('.start-button').addClass('start-button-animate');
 	}
 
 	// GAME START FUNCTION
@@ -107,7 +113,7 @@ $(document).ready(function() {
 		// check if rounds var has a number
 		if(rounds === undefined){
 			console.log('you must pick a number of rounds.');
-			$('.round-choose-title').addClass('bounce');
+			$('.round-choose-title').addClass('round-choose-title-warn');
 			return;
 		}
 
