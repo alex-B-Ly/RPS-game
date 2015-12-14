@@ -14,9 +14,17 @@
 	width: auto;
 	height: 60px;
 	width: 60px;
+	transition: all 1.3s, font-weight 0.5s;
 }
 
-.start-button{
+.round-button:hover{
+	@include solid-border('all', 3px, #F3FC00);
+	font-weight: bold;
+	background: darken(#040AFE, 20%);
+}
+
+.start-button,
+.start-button:active{
 	@include solid-border('all', 5px, #151515);
 	background: #040AFE;
 	color: #F3FC00;
@@ -26,8 +34,7 @@
 }
 
 .start-button:hover{
-	color: #F3FC00;
-	text-shadow: 0 0 10px $choice-buttons;
+	animation: startblink 3s infinite;
 }
 
 .choice-button{

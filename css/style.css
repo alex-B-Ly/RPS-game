@@ -4,6 +4,21 @@
 	author: Alex Ly	
 
 */
+@keyframes startblink {
+  0% {
+    color: #F3FC00;
+    text-shadow: 0 0 55px #F3FC00;
+    background: #0106ce;
+    border: 5px solid #F3FC00; }
+  50% {
+    color: #b3ba00;
+    background: #040AFE;
+    border: 5px solid #919600; }
+  100% {
+    color: #F3FC00;
+    text-shadow: 0 0 55px #F3FC00;
+    background: #0106ce;
+    border: 5px solid #F3FC00; } }
 html,
 body {
   height: 105%; }
@@ -116,9 +131,16 @@ body {
   border-radius: 50%;
   width: auto;
   height: 60px;
-  width: 60px; }
+  width: 60px;
+  transition: all 1.3s, font-weight 0.5s; }
 
-.start-button {
+.round-button:hover {
+  border: 3px solid #F3FC00;
+  font-weight: bold;
+  background: #01049b; }
+
+.start-button,
+.start-button:active {
   border: 5px solid #151515;
   background: #040AFE;
   color: #F3FC00;
@@ -127,8 +149,7 @@ body {
   margin: 20px 0; }
 
 .start-button:hover {
-  color: #F3FC00;
-  text-shadow: 0 0 10px #FFFC03; }
+  animation: startblink 3s infinite; }
 
 .choice-button {
   border: 4px solid #FFFC03;
