@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -51,14 +52,28 @@
 	</div>
 
 	<div class="game-area">
-		<h2>USER SCORE: <span id="user-score">0</span></h2>
-		<h2>COMP SCORE: <span id="comp-score">0</span></h2>
+		<div class="container-fluid">
+			<h2>USER SCORE: <span id="user-score">0</span></h2>
+			<h2>COMP SCORE: <span id="comp-score">0</span></h2>
 
-		<button class="choice-button" data-choice="r">ROCK</button>
-		<button class="choice-button" data-choice="p">PAPER</button>
-		<button class="choice-button" data-choice="s">SCISSORS</button>
-		<button class="choice-button" data-choice="lz">LIZARD</button>
-		<button class="choice-button" data-choice="sp">SPOCK</button>
+			<div class="row text-center">
+				<div class="col-xs-2 col-md-offset-1">
+					<i class="fa fa-hand-rock-o choice-button" data-choice="r"></i>
+				</div>
+				<div class="col-xs-2">
+					<i class="fa fa-hand-paper-o choice-button" data-choice="p"></i>
+				</div>
+				<div class="col-xs-2">
+					<i class="fa fa-scissors choice-button" data-choice="s"></i>
+				</div>
+				<div class="col-xs-2">
+					<i class="fa fa-hand-lizard-o choice-button" data-choice="lz"></i>
+				</div>
+				<div class="col-xs-2">
+					<i class="fa fa-hand-spock-o choice-button" data-choice="sp"></i>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="game-finish-area">

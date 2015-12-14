@@ -22,3 +22,18 @@
 	font-size: 2.75em;
 	margin: 20px 0;
 }
+
+.fa{
+	@include solid-border('all', 4px, $choice-buttons);
+	color: $choice-buttons;
+	font-size: 10em;
+	cursor: pointer;
+	padding: 25px;
+}
+
+@media screen and (max-width: 479px){
+	.fa{
+		font-size: 3em;
+		border: none;
+	}
+}
