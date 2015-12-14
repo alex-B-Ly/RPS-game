@@ -54,17 +54,17 @@ $(document).ready(function() {
 		if(compChoice === 1){
 			console.log('you win');
 			userScore++;
+			roundIncrementer();
 		}else if(compChoice === 0){
 			console.log('tied');
 		}else if(compChoice === -1){
 			console.log('you lose');
 			compScore++;
+			roundIncrementer();
 		}
 	
 		$('#user-score').html(userScore);
 		$('#comp-score').html(compScore);
-
-		roundIncrementer();
 	}
 
 	// ROUND CHOOSE FUNCTION 
