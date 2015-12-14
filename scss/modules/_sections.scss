@@ -84,6 +84,19 @@
 	display: none;
 }
 
+/* RESULTS MODAL */
+.player-choice-modal{
+	font-size: 2em;
+	color: $choice-buttons;
+}
+
+#human-choice-img,
+#comp-choice-img{
+	font-size: 5em;
+	color: $choice-buttons;
+	display: block;
+}
+
 /* GAME FINISH AREA */
 .game-finish-area{
 	background: $game-finish-back;

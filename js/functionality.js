@@ -48,9 +48,10 @@ $(document).ready(function() {
 		var compRand = compRandArr[Math.floor(Math.random()*compRandArr.length)];
 		var compChoice = userChoice[compRand];
 
-		console.log(userChoice);
+		console.log('choicedata: '+choiceData);
 		console.log(compRand);
 
+		modalStuff();
 		$('#results-modal').modal('show');
 
 		if(compChoice === 1){
@@ -67,6 +68,32 @@ $(document).ready(function() {
 	
 		$('#user-score').html(userScore);
 		$('#comp-score').html(compScore);
+
+		function modalStuff(){
+			var humanChoice = $('#human-choice-img');
+			var computerChoice = $('#comp-choice-img');
+
+			humanChoice.removeClass();
+			computerChoice.removeClass();
+
+			function imgSet(choice, player){
+				if(choice==='r'){
+					player.addClass('fa fa-hand-rock-o');
+				}else if(choice==='p'){
+					player.addClass('fa fa-hand-paper-o');
+				}else if(choice==='s'){
+					player.addClass('fa fa-scissors');
+				}else if(choice==='lz'){
+					player.addClass('fa fa-hand-lizard-o');
+				}else if(choice==='sp'){
+					player.addClass('fa fa-hand-spock-o');
+				}
+			}
+
+			imgSet(choiceData, humanChoice);
+			imgSet(compRand, computerChoice);
+		}
+
 	}
 
 	// ROUND CHOOSE FUNCTION 
