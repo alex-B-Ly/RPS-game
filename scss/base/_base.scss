@@ -1,7 +1,7 @@
 // BASE
 html,
 body{
-	height: 105%;
+	height: 107%;
 }
 
 .h1, .h2, .h3, h1, h2, h3{
@@ -11,6 +11,12 @@ body{
 .h1, h1{
 	font-size: 2.4em;
 	margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px){
+	.h1, h1{
+		font-size: 3.5em;
+	}
 }
 
 .main-title{

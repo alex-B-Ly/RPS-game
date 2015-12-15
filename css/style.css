@@ -6,7 +6,7 @@
 */
 html,
 body {
-  height: 105%; }
+  height: 107%; }
 
 .h1, .h2, .h3, h1, h2, h3 {
   margin-top: 0; }
@@ -15,6 +15,9 @@ body {
   font-size: 2.4em;
   margin-top: 10px; }
 
+@media screen and (min-width: 1200px) {
+  .h1, h1 {
+    font-size: 3.5em; } }
 .main-title {
   font-size: 2.3em; }
 
@@ -272,6 +275,10 @@ body {
 .choice-area {
   padding-bottom: 30px; }
 
+#user-score,
+#comp-score {
+  font-size: 2.5em; }
+
 .final-button-area {
   margin-top: 30px;
   display: none; }
@@ -330,7 +337,7 @@ body {
   padding: 40px 0; }
 
 .overall-winner {
-  font-size: 4em;
+  font-size: 3.5em;
   color: #fff; }
 
 .final-user-title,
@@ -344,7 +351,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .choice-row {
-    padding-top: 20%; }
+    padding-top: 17%; }
 
   .score-area {
     padding: 50px 0; }
