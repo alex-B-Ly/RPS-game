@@ -55,17 +55,23 @@ $(document).ready(function() {
 		$('#results-modal').modal('show');
 
 		if(compChoice === 1){
-			console.log('you win');
+			$('.round-result').html('You win!');
 			userScore++;
 			roundIncrementer();
 		}else if(compChoice === 0){
-			console.log('tied');
+			$('.round-result').html('Tie!');
 		}else if(compChoice === -1){
-			console.log('you lose');
+			$('.round-result').html('Computer wins!');
 			compScore++;
 			roundIncrementer();
 		}
-	
+
+		$('.round-result').css('visibility', 'hidden').removeClass('round-result-animate');
+
+		setTimeout(function(){
+			$('.round-result').css('visibility', 'visible').addClass('round-result-animate');
+		},1000);
+
 		$('#user-score').html(userScore);
 		$('#comp-score').html(compScore);
 

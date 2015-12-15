@@ -92,6 +92,23 @@ body {
     text-shadow: 0 0 25px #F3FC00; }
   100% {
     text-shadow: 0 0 5px #F3FC00; } }
+@-webkit-keyframes roundresult {
+  0% {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5); }
+  50% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  65% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
 /* GAME START AREA */
 .game-start-area,
 .game-area,
@@ -181,6 +198,13 @@ body {
 
 #comp-choice-img {
   margin-top: 50px; }
+
+.round-result {
+  font-size: 3em;
+  color: #FFFC03; }
+
+.round-result-animate {
+  animation: roundresult 0.7s 1; }
 
 /* GAME FINISH AREA */
 .game-finish-area {

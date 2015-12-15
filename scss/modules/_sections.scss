@@ -115,6 +115,15 @@
 	margin-top: 50px;
 }
 
+.round-result{
+	font-size: 3em;
+	color: $choice-buttons;
+}
+
+.round-result-animate{
+	animation: roundresult 0.7s 1;
+}
+
 /* GAME FINISH AREA */
 .game-finish-area{
 	background: $game-finish-back;
