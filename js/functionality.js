@@ -48,9 +48,6 @@ $(document).ready(function() {
 		var compRand = compRandArr[Math.floor(Math.random()*compRandArr.length)];
 		var compChoice = userChoice[compRand];
 
-		console.log('choicedata: '+choiceData);
-		console.log(compRand);
-
 		modalStuff();
 		$('#results-modal').modal('show');
 
@@ -125,7 +122,6 @@ $(document).ready(function() {
 	function gameStart(){
 		// check if rounds var has a number
 		if(rounds === undefined){
-			console.log('you must pick a number of rounds.');
 			$('.round-choose-title').addClass('round-choose-title-warn');
 			return;
 		}
@@ -143,7 +139,6 @@ $(document).ready(function() {
 		// if roundCount var = rounds var, hide game elements div, show final score screen
 		roundCount++;
 		if(roundCount > rounds){
-			console.log('game finished');
 			$('.choice-button').off();
 
 			$('.choice-row').fadeOut(500, function(){
