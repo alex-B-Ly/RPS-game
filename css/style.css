@@ -109,6 +109,83 @@ body {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); } }
+@keyframes roundresult {
+  0% {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5); }
+  50% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  65% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+@-webkit-keyframes roundwin {
+  0% {
+    background: #24FF00;
+    color: #010DFF; }
+  50% {
+    background: #1dcc00;
+    color: #fff; }
+  100% {
+    background: #24FF00;
+    color: #010DFF; } }
+@keyframes roundwin {
+  0% {
+    background: #24FF00;
+    color: #010DFF; }
+  50% {
+    background: #1dcc00;
+    color: #fff; }
+  100% {
+    background: #24FF00;
+    color: #010DFF; } }
+@-webkit-keyframes roundtie {
+  0% {
+    background: #00FBF8;
+    color: #89C0FD; }
+  50% {
+    background: #00c8c6;
+    color: #fff; }
+  100% {
+    background: #00FBF8;
+    color: #89C0FD; } }
+@keyframes roundtie {
+  0% {
+    background: #00FBF8;
+    color: #89C0FD; }
+  50% {
+    background: #00c8c6;
+    color: #fff; }
+  100% {
+    background: #00FBF8;
+    color: #89C0FD; } }
+@-webkit-keyframes roundlose {
+  0% {
+    background: #000;
+    color: #FC0000; }
+  50% {
+    background: #FC0000;
+    color: #000; }
+  100% {
+    background: #000;
+    color: #FC0000; } }
+@keyframes roundlose {
+  0% {
+    background: #000;
+    color: #FC0000; }
+  50% {
+    background: #FC0000;
+    color: #000; }
+  100% {
+    background: #000;
+    color: #FC0000; } }
 /* GAME START AREA */
 .game-start-area,
 .game-area,
@@ -201,10 +278,25 @@ body {
 
 .round-result {
   font-size: 3em;
-  color: #FFFC03; }
+  color: #FFFC03;
+  padding: 30px 0; }
 
 .round-result-animate {
   animation: roundresult 0.7s 1; }
+
+.round-win,
+.round-tie,
+.round-lose {
+  font-weight: bold; }
+
+.round-win {
+  animation: roundwin 2.5s infinite; }
+
+.round-tie {
+  animation: roundtie 2.5s infinite; }
+
+.round-lose {
+  animation: roundlose 2.5s infinite; }
 
 /* GAME FINISH AREA */
 .game-finish-area {

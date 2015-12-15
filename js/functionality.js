@@ -55,13 +55,16 @@ $(document).ready(function() {
 		$('#results-modal').modal('show');
 
 		if(compChoice === 1){
-			$('.round-result').html('You win!');
+			roundTitleClassRemove();
+			$('.round-result').addClass('round-win').html('You win!');
 			userScore++;
 			roundIncrementer();
 		}else if(compChoice === 0){
-			$('.round-result').html('Tie!');
+			roundTitleClassRemove();
+			$('.round-result').addClass('round-tie').html('Tie!');
 		}else if(compChoice === -1){
-			$('.round-result').html('Computer wins!');
+			roundTitleClassRemove();
+			$('.round-result').addClass('round-lose').html('Computer wins!');
 			compScore++;
 			roundIncrementer();
 		}
@@ -98,6 +101,10 @@ $(document).ready(function() {
 
 			imgSet(choiceData, humanChoice);
 			imgSet(compRand, computerChoice);
+		}
+
+		function roundTitleClassRemove(){
+			$('.round-result').removeClass('round-win').removeClass('round-lose').removeClass('round-tie');
 		}
 
 	}

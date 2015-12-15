@@ -118,10 +118,29 @@
 .round-result{
 	font-size: 3em;
 	color: $choice-buttons;
+	padding: 30px 0;
 }
 
 .round-result-animate{
 	animation: roundresult 0.7s 1;
+}
+
+.round-win,
+.round-tie,
+.round-lose{
+	font-weight: bold;
+}
+
+.round-win{
+	animation: roundwin 2.5s infinite;
+}
+
+.round-tie{
+	animation: roundtie 2.5s infinite;
+}
+
+.round-lose{
+	animation: roundlose 2.5s infinite;
 }
 
 /* GAME FINISH AREA */
