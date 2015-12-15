@@ -133,18 +133,41 @@
 						<i id="comp-choice-img"></i>
 						<p class="player-choice-modal">Computer chooses</p>
 					</div>
+					<div class="modal-footer text-center">
+						<button class="results-close btn-block" data-dismiss="modal">Next Round</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="game-finish-area">
-		<h2 class="overall-winner"></h2>
-		<p class="final-user-score"></p>
-		<p class="final-user-title">User Score</p>
-		<p class="final-comp-score"></p>
-		<p class="final-comp-title">Computer Score</p>
-		<button class="replay">Replay</button>
+		<div class="container-fluid">
+			<div class="row text-center">
+					<p class="main-title">ROCK PAPER SCISSORS LIZARD SPOCK</p>
+			</div>
+
+			<div class="row text-center winner-row">
+				<h2 class="overall-winner"></h2>
+			</div>
+
+			<div class="row text-center">				
+				<div class="col-xs-6">
+					<p class="final-user-score"></p>
+					<p class="final-user-title">User Score</p>
+				</div>
+
+				<div class="col-xs-6">
+					<p class="final-comp-score"></p>
+					<p class="final-comp-title">Computer Score</p>
+				</div>
+			</div>
+
+			<div class="row text-center">
+				<button class="replay">Replay</button>
+			</div>
+
+		</div>	
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

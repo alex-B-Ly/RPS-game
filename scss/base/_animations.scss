@@ -85,3 +85,15 @@
 	50%{background:#FC0000; color:#000;}
 	100%{background:#000; color:#FC0000;}
 }
+
+@-webkit-keyframes reset{
+	0%{color: #A50404; text-shadow: 0 0 10px #A50404;}
+	50%{color: lighten(#A50404, 20%); text-shadow: 0 0 20px lighten(#A50404, 20%);}
+	0%{color: #A50404; text-shadow: 0 0 10px #A50404;}
+}
+
+@keyframes reset{
+	0%{color: #A50404; text-shadow: 0 0 10px #A50404;}
+	50%{color: lighten(#A50404, 20%); text-shadow: 0 0 20px lighten(#A50404, 20%);}
+	0%{color: #A50404; text-shadow: 0 0 10px #A50404;}
+}

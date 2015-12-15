@@ -186,6 +186,26 @@ body {
   100% {
     background: #000;
     color: #FC0000; } }
+@-webkit-keyframes reset {
+  0% {
+    color: #A50404;
+    text-shadow: 0 0 10px #A50404; }
+  50% {
+    color: #f91616;
+    text-shadow: 0 0 20px #f91616; }
+  0% {
+    color: #A50404;
+    text-shadow: 0 0 10px #A50404; } }
+@keyframes reset {
+  0% {
+    color: #A50404;
+    text-shadow: 0 0 10px #A50404; }
+  50% {
+    color: #f91616;
+    text-shadow: 0 0 20px #f91616; }
+  0% {
+    color: #A50404;
+    text-shadow: 0 0 10px #A50404; } }
 /* GAME START AREA */
 .game-start-area,
 .game-area,
@@ -264,6 +284,9 @@ body {
   font-size: 2em;
   color: #FFFC03; }
 
+.player-choice-modal:last-of-type {
+  margin-top: 20px; }
+
 #human-choice-img,
 #comp-choice-img {
   font-size: 5em;
@@ -303,9 +326,21 @@ body {
   background: #00067d;
   display: none; }
 
+.winner-row {
+  padding: 40px 0; }
+
 .overall-winner {
-  font-size: 2.5em;
-  color: red; }
+  font-size: 4em;
+  color: #fff; }
+
+.final-user-title,
+.final-comp-title {
+  font-size: 2em; }
+
+.final-user-score,
+.final-comp-score {
+  font-size: 3.4em;
+  margin-top: 5%; }
 
 @media screen and (min-width: 1200px) {
   .choice-row {
@@ -315,7 +350,7 @@ body {
     padding: 50px 0; }
 
   .game-area-score {
-    font-size: 4em; } }
+    font-size: 3.25em; } }
 .round-button,
 .start-button {
   outline: none;
@@ -362,9 +397,33 @@ body {
 .choice-button:hover {
   animation: choiceblink 1s infinite; }
 
+.results-close {
+  font-size: 1.8em;
+  padding: 15px 0;
+  color: #fff;
+  background: #4A53FF; }
+
+.results-close:hover {
+  background: #0d19ff;
+  text-shadow: 0 0 12px #fff; }
+
 .final-button {
   font-size: 3em;
   padding: 20px 0; }
+
+.replay {
+  border: 4px solid #000F9E;
+  animation: reset 1s infinite;
+  border-radius: 40px;
+  font-size: 3em;
+  padding: 20px;
+  background: #ccc;
+  color: #A50404;
+  margin-top: 7%;
+  transition: background 1.3s; }
+
+.replay:hover {
+  background: #000; }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .choice-button {

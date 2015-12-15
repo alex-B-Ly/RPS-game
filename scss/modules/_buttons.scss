@@ -53,9 +53,37 @@
 	animation: choiceblink 1s infinite;
 }
 
+.results-close{
+	font-size: 1.8em;
+	padding: 15px 0;
+	color: #fff;
+	background: $game-start-back;
+}
+
+.results-close:hover{
+	background: darken($game-start-back,12%);
+	text-shadow: 0 0 12px #fff;	
+}
+
 .final-button{
 	font-size: 3em;
 	padding: 20px 0;
+}
+
+.replay{
+	@include solid-border('all', 4px, #000F9E);
+	animation: reset 1s infinite;
+	border-radius: 40px;
+	font-size: 3em;
+	padding: 20px;
+	background: #ccc;
+	color: #A50404;
+	margin-top: 7%;
+	transition: background 1.3s;
+}
+
+.replay:hover{
+	background: #000;
 }
 
 // MEDIA QUERIES

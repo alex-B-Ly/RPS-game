@@ -100,6 +100,10 @@
 	color: $choice-buttons;
 }
 
+.player-choice-modal:last-of-type{
+	margin-top: 20px;
+}
+
 #human-choice-img,
 #comp-choice-img{
 	font-size: 5em;
@@ -149,9 +153,24 @@
 	display: none;
 }
 
+.winner-row{
+	padding: 40px 0;
+}
+
 .overall-winner{
-	font-size: 2.5em;
-	color: red;
+	font-size: 4em;
+	color: #fff;
+}
+
+.final-user-title,
+.final-comp-title{
+	font-size: 2em;
+}
+
+.final-user-score,
+.final-comp-score{
+	font-size: 3.4em;
+	margin-top: 5%;
 }
 
 // MEDIA QUERIES
@@ -165,6 +184,6 @@
 	}
 
 	.game-area-score{
-		font-size: 4em;
+		font-size: 3.25em;
 	}
 }
