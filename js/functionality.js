@@ -192,11 +192,21 @@ $(document).ready(function() {
 		$('.replay').on('click', replay);
 	}
 
-		// BOUND FUNCTIONS
+	// START SCREEN IMAGE CHANGER
+	function iconChange(){
+		var iconList = ['fa-hand-rock-o', 'fa-hand-paper-o', 'fa-scissors', 'fa-hand-lizard-o', 'fa-hand-spock-o'];
+		var randIcon = iconList[Math.floor(Math.random()*iconList.length)];
+
+		$('#start-screen-icons').fadeOut(1000, function() {
+			$(this).removeClass().addClass('fa').addClass(randIcon).fadeIn(1000);
+		});
+	}
+
+	// BOUND FUNCTIONS
 	$('.round-button').on('click', roundChoose);
 	$('.start-button').on('click', gameStart);
-	
 
 	// FUNCTIONS CALLED
+	setInterval(iconChange, 3700);
 
 });
