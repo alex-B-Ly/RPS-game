@@ -78,6 +78,20 @@ body {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); } }
+@-webkit-keyframes choiceblink {
+  0% {
+    text-shadow: 0 0 5px #F3FC00; }
+  50% {
+    text-shadow: 0 0 25px #F3FC00; }
+  100% {
+    text-shadow: 0 0 5px #F3FC00; } }
+@keyframes choiceblink {
+  0% {
+    text-shadow: 0 0 5px #F3FC00; }
+  50% {
+    text-shadow: 0 0 25px #F3FC00; }
+  100% {
+    text-shadow: 0 0 5px #F3FC00; } }
 /* GAME START AREA */
 .game-start-area,
 .game-area,
@@ -148,6 +162,9 @@ body {
   margin-top: 30px;
   display: none; }
 
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 3.5em; } }
 /* RESULTS MODAL */
 .player-choice-modal {
   font-size: 2em;
@@ -221,14 +238,13 @@ body {
   animation: startblink 2s infinite; }
 
 .choice-button {
-  border: 4px solid #FFFC03;
   color: #FFFC03;
   font-size: 10em;
   cursor: pointer;
-  padding: 25px; }
+  padding: 30px; }
 
 .choice-button:hover {
-  box-shadow: inset 0 0 20px #cfcd00; }
+  animation: choiceblink 1s infinite; }
 
 .final-button {
   font-size: 3em;
@@ -236,9 +252,11 @@ body {
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .choice-button {
-    font-size: 6em;
+    font-size: 5em;
     margin-bottom: 10px;
-    min-width: 160px; } }
+    min-width: 160px;
+    padding: 25px;
+    border: 0; } }
 @media screen and (max-width: 479px) {
   .choice-button {
     font-size: 4em;

@@ -43,15 +43,14 @@
 }
 
 .choice-button{
-	@include solid-border('all', 4px, $choice-buttons);
 	color: $choice-buttons;
 	font-size: 10em;
 	cursor: pointer;
-	padding: 25px;
+	padding: 30px;
 }
 
 .choice-button:hover{
-	box-shadow: inset 0 0 20px darken($choice-buttons, 10%);
+	animation: choiceblink 1s infinite;
 }
 
 .final-button{
@@ -60,11 +59,13 @@
 }
 
 // MEDIA QUERIES
-@media screen and (min-width: 480px) and (max-width: 1199px){
+@media screen and (min-width:480px) and (max-width:1199px){
 	.choice-button{
-		font-size: 6em;
+		font-size: 5em;
 		margin-bottom: 10px;
 		min-width: 160px;
+		padding: 25px;
+		border: 0;
 	}
 }
 

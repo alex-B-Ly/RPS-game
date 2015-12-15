@@ -88,6 +88,12 @@
 	display: none;
 }
 
+@media screen and (min-width: 1200px){
+	.main-title{
+		font-size: 3.5em;
+	}
+}
+
 /* RESULTS MODAL */
 .player-choice-modal{
 	font-size: 2em;
